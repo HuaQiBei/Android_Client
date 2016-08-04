@@ -38,13 +38,13 @@ public class MyInfoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_myinfo, container, false);
-        head = view.findViewById(R.id.item1);
-        name = view.findViewById(R.id.item2);
-        reset = view.findViewById(R.id.item3);
-        phone = view.findViewById(R.id.item4);
-        email =view.findViewById(R.id.item5);
-        address = view.findViewById(R.id.item6);
-        other = view.findViewById(R.id.item7);
+        head = view.findViewById(R.id.head);
+        name = view.findViewById(R.id.name);
+        reset = view.findViewById(R.id.reset);
+        phone = view.findViewById(R.id.phone);
+        email =view.findViewById(R.id.email);
+        address = view.findViewById(R.id.address);
+        other = view.findViewById(R.id.other);
 
         head.setOnClickListener(new View.OnClickListener(){
             @Override

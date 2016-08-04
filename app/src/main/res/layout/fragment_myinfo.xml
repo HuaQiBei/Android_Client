@@ -8,7 +8,9 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/item1">
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/head">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -17,16 +19,24 @@
             android:textSize="20dp"
             android:layout_marginLeft="16dp"
             android:text="头像"
-            android:layout_alignParentTop="true"
-            android:layout_alignBottom="@+id/imageView"/>
+            android:padding="16dp"/>
 
         <ImageView
+            android:id="@+id/photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:src="@mipmap/ic_right"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/imageView"/>
+            android:src="@drawable/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_toLeftOf="@id/photo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/head"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
 
     <LinearLayout style="@style/common_horizontal_division_line_style" />
@@ -34,7 +44,7 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/item2">
+                    android:id="@+id/name">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,15 +53,14 @@
             android:textSize="20dp"
             android:layout_marginLeft="16dp"
             android:text="昵称"
-            android:layout_alignParentTop="true"
-            android:layout_alignBottom="@+id/imageView1"/>
+            android:padding="16dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:src="@mipmap/ic_right"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/imageView1"/>
+            android:src="@drawable/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
 
     <LinearLayout style="@style/common_horizontal_division_line_style" />
@@ -59,9 +68,8 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/item3">
+                    android:id="@+id/reset">
         <TextView
-            android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -69,15 +77,14 @@
             android:textSize="20dp"
             android:layout_marginLeft="16dp"
             android:text="密码重设"
-            android:layout_alignParentTop="true"
-            android:layout_alignBottom="@+id/imageView2"/>
+            android:padding="16dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:src="@mipmap/ic_right"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/imageView2"/>
+            android:src="@drawable/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
 
     <LinearLayout style="@style/common_horizontal_division_line_style" />
@@ -85,9 +92,8 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/item4">
+                    android:id="@+id/phone">
         <TextView
-            android:id="@+id/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -95,15 +101,14 @@
             android:textSize="20dp"
             android:layout_marginLeft="16dp"
             android:text="手机号"
-            android:layout_alignParentTop="true"
-            android:layout_alignBottom="@+id/imageView3"/>
+            android:padding="16dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:src="@mipmap/ic_right"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/imageView3"/>
+            android:src="@drawable/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
 
     <LinearLayout style="@style/common_horizontal_division_line_style" />
@@ -111,9 +116,8 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/item5">
+                    android:id="@+id/email">
         <TextView
-            android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -121,17 +125,15 @@
             android:textSize="20dp"
             android:layout_marginLeft="16dp"
             android:text="邮箱"
-            android:layout_alignParentTop="true"
-            android:layout_alignBottom="@+id/imageView4"/>
+            android:padding="16dp"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:src="@mipmap/ic_right"
-            android:id="@+id/imageView4"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"/>
+            android:src="@drawable/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
 
     <LinearLayout style="@style/common_horizontal_division_line_style" />
@@ -139,9 +141,8 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/item6">
+                    android:id="@+id/address">
         <TextView
-            android:id="@+id/address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -149,16 +150,15 @@
             android:textSize="20dp"
             android:layout_marginLeft="16dp"
             android:text="保单地址"
-            android:layout_alignParentTop="true"
-            android:layout_alignBottom="@+id/imageView5"/>
+            android:padding="16dp"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:src="@mipmap/ic_right"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/imageView5"/>
+            android:src="@drawable/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
 
     <LinearLayout style="@style/common_horizontal_division_line_style" />
@@ -166,9 +166,8 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/item7">
+                    android:id="@+id/other">
         <TextView
-            android:id="@+id/other"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -176,16 +175,15 @@
             android:textSize="20dp"
             android:layout_marginLeft="16dp"
             android:text="添加其他联系人"
-            android:layout_alignParentTop="true"
-            android:layout_alignBottom="@+id/imageView6"/>
+            android:padding="16dp"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:src="@mipmap/ic_right"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/imageView6"/>
+            android:src="@drawable/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
-
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
 </LinearLayout>
