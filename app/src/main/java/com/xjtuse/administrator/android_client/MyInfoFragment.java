@@ -63,16 +63,15 @@ public class MyInfoFragment extends Fragment {
         reset.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),HeadActivity.class);
+                Intent intent = new Intent(getActivity(),ResetActivity.class);
                 startActivity(intent);
-                //
-                Log.d("aaa","");
+
             }
         });
         phone.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),HeadActivity.class);
+                Intent intent = new Intent(getActivity(),PhoneActivity.class);
                 startActivity(intent);
             }
         });
